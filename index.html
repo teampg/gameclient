@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Socket To The Zombies! - A multiplayer browser game.</title>
+
+	<link href="css/reset.css" rel="stylesheet" type="text/css">
+	<style type="text/css">
+		/* TODO Make pretty */
+		#gameCanvas {
+			border:1px solid black;
+			margin:auto auto;
+			display:block;
+			position:relative;
+		}
+		#chatSkim {
+			position:absolute;
+			font-weight: bold;
+			padding:4px;
+		}
+		#chatOut {
+			position:absolute;
+			background-color: rgba(100, 100, 100, 0.9);
+			overflow-y:scroll;
+			padding:8px;
+			border:2px solid rgba(75, 75, 75, 1);
+		}
+		#chatIn {
+			position:absolute;
+		}
+		#chatIn input {
+			background-color: rgba(100, 100, 100, 0.5);
+		}
+	</style>
+</head>
+<body>
+
+	<canvas id="gameCanvas">
+		Your browser does not support the canvas element.
+		<br>
+		Please upgrade your browser to play.
+		<br>
+		Upgrading your browser makes the world a better place.
+	</canvas>
+
+	<div id="chatSkim"></div>
+	<div id="chatOut"></div>
+	<div id="chatIn"><input type="text" style="width:100%;"></div>
+
+	<script type="text/javascript" src="js/libs/createjs/easeljs-0.4.2.min.js"></script>
+	<script type="text/javascript" src="js/libs/createjs/soundjs-0.2.0.min.js"></script>
+	<script type="text/javascript" src="js/libs/createjs/preloadjs-0.1.0.min.js"></script>
+	<script type="text/javascript" src="js/Util.js"></script>
+	<script type="text/javascript" src="js/StageManager.js"></script>
+	<script type="text/javascript" src="js/ScalableContainer.js"></script>
+	<script type="text/javascript" src="js/LoadingScreen.js"></script>
+	<script type="text/javascript" src="js/IntroScreen.js"></script>
+	<script type="text/javascript" src="js/GameScreen.js"></script>
+	<script type="text/javascript" src="js/ChatScreen.js"></script>
+	<script type="text/javascript" src="js/DebugScreen.js"></script>
+	<script type="text/javascript" src="js/GameBoard.js"></script>
+	<script type="text/javascript" src="js/GamePlayer.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+
+</body>
+</html>
